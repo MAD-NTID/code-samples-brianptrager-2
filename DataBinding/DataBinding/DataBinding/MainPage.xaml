@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DataBinding.MainPage">
+
+    <StackLayout>
+        <!-- Entry controls automatically have two-way binding -->
+        <Entry x:Name="Author" Text="{Binding Author}" />
+        <Entry x:Name="Title" Text="{Binding Title}" />
+        <Entry x:Name="Year" Text="{Binding Year}"/>
+        <Entry x:Name="ISBN" Text="{Binding ISBN}"/>
+
+        <StackLayout Margin="0,50,0,0">
+            <!-- Label controls automatically have one-way binding -->
+            <Label Text="{Binding Author}" />
+            <Label Text="{Binding Title}" />
+            <Label Text="{Binding Year}"/>
+            <Label Text="{Binding ISBN}"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

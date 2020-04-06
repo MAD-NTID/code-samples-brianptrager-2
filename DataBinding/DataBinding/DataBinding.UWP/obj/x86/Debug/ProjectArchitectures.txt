@@ -1,0 +1,1 @@
+C:\Users\brian.000\source\repos\DataBinding\DataBinding\DataBinding.UWP\DataBinding.UWP.csproj;x86
